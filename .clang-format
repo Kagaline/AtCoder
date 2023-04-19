@@ -9,7 +9,7 @@ AlignAfterOpenBracket: Align
 AlignConsecutiveAssignments: true
 
 # 連続する行の宣言の位置を揃える
-AlignConsecutiveDeclarations: true
+AlignConsecutiveDeclarations: false
 
 # 二項演算子と三項演算子を揃える
 AlignOperands: true
