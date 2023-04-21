@@ -1,5 +1,5 @@
 #include <iostream>
-#include <list>
+#include <list>    // 前後に挿入するためデータ構造としてlistを利用する
 
 int main(void)
 {
