@@ -21,13 +21,24 @@ int main(void)
                 deck.push_back(integer);
                 break;
             case 3:
-                auto itr       = deck.begin();
-                unsigned int j = 1;
-                while (j != integer) {
-                    itr++;
-                    j++;
+                if (integer < deck.size() / 2) {
+                    auto itr       = deck.begin();
+                    unsigned int j = 1;
+                    while (j != integer) {
+                        itr++;
+                        j++;
+                    }
+                    std::cout << *itr << std::endl;
+                } else {
+                    auto itr = deck.end();    // deck.end()は最後の要素の次を指しているので
+                    itr--;    // 最後の要素を指すためにはここであらかじめ一つ前にずらしておく
+                    unsigned int j = deck.size();
+                    while (j != integer) {
+                        itr--;
+                        j--;
+                    }
+                    std::cout << *itr << std::endl;
                 }
-                std::cout << *itr << std::endl;
                 break;
             default:
                 break;
