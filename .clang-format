@@ -46,7 +46,7 @@ IncludeBlocks: Preserve
 IndentCaseLabels: true
 
 # インデントは4スペース
-IndentWidth: 4
+IndentWidth: 2
 
 # ポインターの * & は変数宣言の左に記述する
 PointerAlignment: Right
